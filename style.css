@@ -46,14 +46,29 @@
 
 }
 
-.modala{
+.modala1{
     width: 300px;
     height: 200px;
     margin:20px;
     border-radius: 4px;
-    position: absolute;
+    position: relative;
     text-align: center;
-    left: 0;
-    right: 0;
+    
     letter-spacing: 1px;
-   
+}
+
+.chatB{
+    margin-top:-200px;
+    width: 100%;
+    height: 530px;
+    border-radius: 2px;
+    position: relative;
+    text-align: center;
+    top: 0;
+    right: 0;
+}
+.peopleIcon{
+    height: 50px;
+    width: 30px;
+    border-radius: 360%;
+}
