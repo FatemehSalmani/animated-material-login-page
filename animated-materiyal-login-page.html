@@ -8,6 +8,11 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
      <link type="text/css" rel="stylesheet" href="style.css" />
 
    </head>
@@ -21,45 +26,51 @@
                     <span class="fa fa-paper-plane-o plane"></span>
                 </div>
 
-                <div class="line first white" style=" width:130px; height: 5px; opacity: 0.8;"></div>
-                <div class="line secound white" style="width: 80px; height: 4px; opacity: 0.7;"></div>
+                <div class="line  white" style=" width:130px; height: 5px; opacity: 0.8;"></div>
+                <div class="line  white" style="width: 80px; height: 4px; opacity: 0.7;"></div>
 
                 <div>
 
-                    <a id="sign-Up" class="btn white blue-grey-text  z-depth-4">SIGN UP</a>
+                    <a id="sign-Up" class="btn white blue-grey-text  z-depth-4 text-uppercase " href="#input-box">SIGN UP</a>
 
                 </div>
 
-                <div class="white" id="input-box" style="display: none">
-                        <div class="row">
+                <div class="white modala " id="input-box" style="display: none; margin-top: 50px" >
+                       <div class="row center" style="width: 300px;">
                                 <form class="col s12">
                                   <div class="row">
-                                    <div class="input-field col s10">
+                                    <div style="opacity: 0.7" class="input-field col s10">
                                       <input  id="user_name" type="text" class="validate">
                                       <label for="user_name">Username</label>
                                     </div>
                                     
-                                    <div class="input-field col s10">
+                                    <div style="opacity: 0.7" class="input-field col s10">
                                             <input  id="Password" type="password" class="validate">
                                             <label for="Password">Password</label>
                                           </div>
                                   </div>
-                                  
-                                  <div id="done-btn">
-                                        <a href="#" class="btn  pink darken-1 whit-text  z-depth-4">DONe</a>
-            
-                                    </div>
                                 </form>
+
+                                <div class="col s12">
+                                        <a id="done-btn" style="margin-top: -20px" href="#" class="btn  pink darken-1 whit-text  z-depth-4 text-uppercase ">DONe</a>
+                                </div>
                               </div>
 
-                        
+                              <!-- Textfield with Floating Label -->
+
+            
+                
+                    
                 </div>
 
 
 
 
-                <!--<a href="#" class="btn-floating z-depth-4 pink lighten-2 right button" ><i class="material-icons ">add</i></a>-->
-            </div>
+                <!--<button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                        <i class="material-icons">add</i>
+                      </button>   -->          
+                    
+                </div>
 
 
            
@@ -72,7 +83,9 @@
     var inForm = document.getElementById('input-box');
     signUp.onclick = function() {
         inForm.style.display = "block";
+        signUp.style.display ="none";
 }
     </script>
+
 </body>
 </html>

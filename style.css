@@ -35,7 +35,6 @@
     font-family: helvetica;
     width: 150px;
     height: 50px;
-    text-transform: uppercase;
 }
 
 .line{
@@ -47,3 +46,14 @@
 
 }
 
+.modala{
+    width: 300px;
+    height: 200px;
+    margin:20px;
+    border-radius: 4px;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    letter-spacing: 1px;
+   
