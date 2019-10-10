@@ -24,13 +24,13 @@
                 <div class="line first white" style=" width:130px; height: 5px; opacity: 0.8;"></div>
                 <div class="line secound white" style="width: 80px; height: 4px; opacity: 0.7;"></div>
 
-                <div id="sign-Up">
+                <div>
 
-                    <a class="btn white blue-grey-text  z-depth-4">SIGN UP</a>
+                    <a id="sign-Up" class="btn white blue-grey-text  z-depth-4">SIGN UP</a>
 
                 </div>
 
-                <div>
+                <div class="white" id="input-box" style="display: none">
                         <div class="row">
                                 <form class="col s12">
                                   <div class="row">
@@ -44,8 +44,15 @@
                                             <label for="Password">Password</label>
                                           </div>
                                   </div>
+                                  
+                                  <div id="done-btn">
+                                        <a href="#" class="btn  pink darken-1 whit-text  z-depth-4">DONe</a>
+            
+                                    </div>
                                 </form>
                               </div>
+
+                        
                 </div>
 
 
@@ -60,5 +67,12 @@
 
            
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+    var signUp = document.getElementById('sign-Up');
+    var inForm = document.getElementById('input-box');
+    signUp.onclick = function() {
+        inForm.style.display = "block";
+}
+    </script>
 </body>
 </html>
